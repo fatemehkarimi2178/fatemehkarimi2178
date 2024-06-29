@@ -1,4 +1,7 @@
 {
+    "prettier.tabWidth": 4,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[tex]": {
         "editor.defaultFormatter": "James-Yu.latex-workshop"
@@ -8,8 +11,8 @@
     },
     "latex-workshop.latex.recipes": [
         {
-            "name": "latexmk, makeglossaries, latexmk (2x)",
-            "tools": ["latexmk", "makeglossaries", "latexmk", "latexmk"]
+            "name": "latexmk",
+            "tools": ["latexmk"]
         }
     ],
     "latex-workshop.latex.tools": [

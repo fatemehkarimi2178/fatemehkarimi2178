@@ -137,7 +137,7 @@
             \setlength{\leftmargin}{1.5em}
         }
         \item[]
-            }{
+              }{
     \end{list}
 }
 
