@@ -1,0 +1,227 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}    
+\usepackage{pdfpages}%
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{multicol}
+% adjust the page margins
+\usepackage[scale=0.9,top=0.5cm, bottom=0.1cm]{geometry}
+% \usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{xpatch}
+\xpatchcmd\cventry{,}{}{}{}
+
+% personal data
+\name{Fatemeh}{Karimi Barikarasfi}                               % optional, remove / comment the line if not wanted
+% \address{70 Absolute Ave.}{L4Z 0A4 Mississauga}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\vspace*{1mm}
+\phone[mobile]{(0933)~794~6278}
+\email{fatemehkarimi2178@gmail.com}
+\social[linkedin]{fatemehkarimi2178} 
+% \social[github]{fatemehkarimi2178}  
+% optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+% \email{fatemehkarimi1105@gmail.com}                               % optional, remove / comment the line if not wanted                    % optional, remove / comment the line if not wanted
+%  \social[linkedin]{fatemehkarimi2178} 
+%  \social[github]{fatemehkarimi2178}
+% \social[homepage]{fatemehkarimi2178}
+%  \homepage{https://fatemehkarimi2178.wixsite.com/default} 
+ % \href{https://fatemehkarimi2178.wixsite.com/default}{Website}
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\vspace*{-1.05mm}
+\makecvtitle
+\vspace*{-10mm}
+\section{Education}
+\cventry{Tehran, Iran}{}{Iran University of Science and Technology }{Sept. 2017 - Jan. 2022}{\hspace*{-2.5 mm} Bachelor of Science }{}
+{\hspace*{-2.5 mm} }{ B.Sc in Electrical Engineering (Telecommunication) }
+\begin{itemize}
+    \item GPA: 15.92/20
+    \item Last two years GPA: 16.53/20
+\end{itemize}
+
+\vspace*{3 mm}
+
+\cventry{Tehran, Iran}{}{Young Scholar Club }{June. 2016 - Aug. 2016}{\hspace*{-2.5 mm} Physics  }{}
+\begin{itemize}
+    \item Got Bronze Modal
+\end{itemize}
+\vspace*{3 mm}
+
+\cventry{Tehran, Iran}{}{Farzanegan2 High School }{Sept. 2013 - June. 2017}{\hspace*{-2.5 mm} Diploma in Mathematics and Physics  }{}
+\begin{itemize}
+    \item Pre-university GPA: 18.86/20
+    \item Diploma GPA: 17.86/20
+\end{itemize}
+
+\section{Research Interest}
+% {}{Related Coursework:}
+\vspace{-1.0em}\begin{small}
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item Theoretical Physics
+            \item Mathematics and Statistics
+            \item Computational Neuroscience
+            \item Signal Processing
+        \end{itemize}
+    \end{multicols}\end{small}
+
+% \section{Research Interest}
+% % {}{Related Coursework:}
+% \vspace{1.0em}
+% \begin{itemize}
+% \item Theoretical Physics
+% \item Mathematics and Statistics
+% \item Signal Processing
+% \end{itemize}
+
+\section{Research Experience}
+\cventry{}{}{Undergraduate Research Assistant}{Apr. 2021 - Oct. 2021}{\hspace*{-2.5 mm} Iran University of Science and Technology, Department of Electrical Engineering }{}
+\begin{itemize}
+    \item {Worked on Routing algorithms analysis ( Dijkstra, Bellman‑Ford, and Q‑Routing) on Static and Dynamically Changed Networks modeled by Queuing Theory\newline \textit{Under the supervision of \href{https://scholar.google.nl/citations?user=wulBErEAAAAJ&hl=en}{{Prof. Shahrokh Farahmand}} \newline Grade Point: 20/20} }
+\end{itemize}
+
+\section{Achievements}
+\begin{itemize}
+    \item {Member of Iran’s National Elites Foundation  \hfill{2016 – Ongoing}}
+    \item {Received Bronze Medal in Iran’s National Physics Olympiad \hfill{2016}}
+    \item {Member of National Organization for Development of Exceptional Talents \hfill{2011 - 2017}}
+\end{itemize}
+% \vspace{-1.0em}
+
+
+\section{Technical Skill}
+\begin{itemize}
+    \item \textbf{Programming Language} \newline{Python, C/C++, MATLAB}
+\end{itemize}
+\begin{itemize}
+    \item \textbf{Framework and Library} \newline{NumPy, Pandas, Matplotlib, TensorFlow, Keras, Scikit-learn, NetworkX}
+\end{itemize}
+\begin{itemize}
+    \item \textbf{Professional Software} \newline{P–Spice, H–Spice, OMNeT++, HFSS}
+\end{itemize}
+\begin{itemize}
+    \item \textbf{Technology} \newline{Git, VSCode}
+\end{itemize}
+
+
+\section{Notable Project}
+ {}{\textbf{Linear Control Systems}}
+\begin{itemize}
+    \item {DC Motor Transfer Function Estimation using System Identification Toolbox of MATLAB}
+    \item {DC Motor Position and Velocity Controller Design using Phase‑Lag, Phase‑Lead, and PID Controllers using MATLAB}
+\end{itemize}
+\newpage
+\vspace{2 mm}
+{}{\textbf{Digital Communication}}
+\begin{itemize}
+    \item {Implementation of QAM, BPSK, FSK, and Ml Modulation and Detection Algorithms in AWGN Channel using MATLAB}
+    \item {Implementation of QPSK and BPSK Modulation and Detection Algorithms in Rayleigh Fading Channel using MATLAB}
+    \item{Implementation of Hamming Code and its Detection Algorithm in AWGN Channel using MATLAB}
+\end{itemize}
+\vspace{2 mm}
+{}{\textbf{Digital Signal Processing}}
+\begin{itemize}
+    \item {Implementation of OFDM Sender and Receiver using MATLAB}
+    \item {Speech Signal Denoising using Implemented FIR and IIR Filters using MATLAB}
+\end{itemize}
+\vspace{2 mm}
+{}{\textbf{Electronic Circuit}}
+\begin{itemize}
+    \item {Circuit Design and Simulation of following Electrical Circuits: Voltage Regulator, Electrical Thermometer, and several Voltage and Current Amplifiers using P–Spice}
+    \item {Design and Simulation of following Integrated Circuits: an Operational Amplifiers, a Current Source, and a Folded Cascode Amplifier using H–Spice}
+\end{itemize}
+\vspace{2 mm}
+{}{\textbf{Economic Engineering}}
+\begin{itemize}
+    \item {Economic Evaluation of a Homemade Solar Power Plant by EXCEL}
+\end{itemize}
+\vspace{2 mm}
+{}{\textbf{Antenna}}
+\begin{itemize}
+    \item {Cross Dipole Antenna Design, Simulation, and Analysis using HFSS}
+\end{itemize}
+\section{Online Course and Selected Certificate}
+ {}{\textbf{Python Programming} $|$ \textit{\href{https://www.pytopia.ai}{by PYTOPIA}}}
+\begin{itemize}
+    \item \textbf{Covered Topics} {: Object Oriented Programming and Modularization, Advanced Topics including Decorators, Exceptions, Iterators and Generators, Descriptors, Serialization (JSON, YAML, Pickle), itertools, pytest, concurrency (Thread, Process)}
+\end{itemize}
+\vspace{2 mm}
+{}{\textbf{The Brain and Space} $|$ \textit{\href{https://www.coursera.org/learn/human-brain}{by Duke University}}}
+\begin{itemize}
+    \item \textbf{Covered Topics} {: Vision, the Body and Neural Signals, Brain Maps, Sound and Brain Representation, Representations, Reference Frames and Navigation, Memory and Cognition}
+\end{itemize}
+\vspace{2 mm}
+{}{\textbf{Brain Mapping Spring School} $|$ \textit{by National Brain Mapping Laboratory}}
+\begin{itemize}
+    \item \textbf{Covered Topics} {: Introduction to Brain Anatomy, Neuroscience and Cognitive Science, and Brain
+              Imaging, Fundamentals of EEG, MRI, fNIRS, TMS/TES, and Neurofeedback}
+\end{itemize}
+\vspace{2 mm}
+{}{\textbf{FPGA Course} $|$ \textit{by IEEE Student Branch of Iran University of Science and Technology}}
+\begin{itemize}
+    \item \textbf{Covered Topics} {: Introduction to Verilog and VHDL}
+\end{itemize}
+
+\section{Volunteer Experience}
+ {}{\textbf{High School Mathematics and Physics Teacher}}
+\begin{itemize}
+    \item Teaching geometry, discrete mathematics, calculus, and physics
+\end{itemize}
+
+\section{Reference}
+ {}{\href{https://scholar.google.nl/citations?user=wulBErEAAAAJ&hl=en}{\textbf{Prof. Shahrokh Farahmand}} $|$ \textit{Assistant Professor at Iran University of Science and Technology}}
+\begin{itemize}
+    \item \href {mailto: sha.farahmand@gmail.com}{sha.farahmand@gmail.com}
+\end{itemize}
+
+\vspace{2 mm}
+{}{\href{https://its.iust.ac.ir/profile/en/farzanhaddadi}{\textbf{Prof. Farzan Haddadi}} $|$ \textit{Associate Professor at Iran University of Science and Technology}}
+\begin{itemize}
+    \item \href {mailto: farzanhaddadi@iust.ac.ir}{farzanhaddadi@iust.ac.ir}
+\end{itemize}
+
+\section{Language}
+\begin{itemize}
+    \item \textbf{English} {TOEFL iBT: 93/100 (Reading: 27 $|$ Listening: 28, $|$ Speaking: 19 $|$ Writing: 19)}
+\end{itemize}
+\vspace{2 mm}
+\begin{itemize}
+    \item \textbf{Persian} {Native}
+\end{itemize}
+\end{document}

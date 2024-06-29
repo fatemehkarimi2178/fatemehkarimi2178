@@ -107,7 +107,7 @@
 \newcommand{\entry}[2]{#1 & #2 \tabularnewline}
 
 % Define the resume header
-\newcommand{\resumeheader}[6]{
+\newcommand{\resumeheader}[4]{
     % \phantomsection
     % \addcontentsline{toc}{chapter}{\@name}
     \begin{tabular}[c]{l}
@@ -119,9 +119,8 @@
     \vspace{0.8em}
     \newline
     \begin{tabular}[c]{l@{\hspace{1em}}l}
-        \entry{\small#4}{\small#1}
-        \entry{\small#5}{\small#2}
-        \entry{\small#6}{\small#3}
+        \entry{\small#1}{\small#3}
+        \entry{\small#2}{\small#4}
     \end{tabular}
 }
 
