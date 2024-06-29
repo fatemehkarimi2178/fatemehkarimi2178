@@ -1,0 +1,33 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[tex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk, makeglossaries, latexmk (2x)",
+            "tools": ["latexmk", "makeglossaries", "latexmk", "latexmk"]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-xelatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "makeglossaries",
+            "command": "makeglossaries",
+            "args": ["%DOCFILE%"]
+        }
+    ]
+}
