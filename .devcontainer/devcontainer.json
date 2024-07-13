@@ -14,7 +14,7 @@
 
     // Use 'postCreateCommand' to run commands after the container is created.
     "postCreateCommand": {
-        "fonts": "apt install -y libfontconfig && mkdir -p ~/.fonts && cp fonts/* ~/.fonts"
+        "fonts": "apt install -y apt-get install texlive-fonts-recommended && mkdir -p ~/.fonts && cp fonts/* ~/.fonts"
     },
 
     // Configure tool-specific properties.
